@@ -40,5 +40,12 @@ code {
 
 **Unidades Detalhadas**
 
-**px** (Pixels): É uma unidade absoluta. 16px sempre será 16px na tela. É fácil de entender, mas ruim para acessibilidade (se o usuário der zoom no navegador, às vezes)
- 
+**px** (Pixels): É uma unidade absoluta. 16px sempre será 16px na tela. É fácil de entender, mas ruim para acessibilidade (se o usuário der zoom no navegador, às vezes fontes em px não crescem adequadamente).
+
+**rem** (Root EM): É uma unidade relativa. Ele olha para o tamanho base do documento HTML inteiro (que por padrão nos navegadores é 16px). Portanto 1rem = 16px. É a medida mais recomendada para tamanho de fontes hoje em dia.
+
+**em**: Também relativa, mas olha para o tamanho do elemento pai dele. Se uma div tem fonte 20px, um parágrafo dentro dela com tamanho 2em terá 40px.
+
+**pt** (Pontos): Unidade física, usada principalmente para impressão. 1pt equivale a 1/72 de uma polegada. Muito raramente usada para telas.
+
+
