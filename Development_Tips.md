@@ -82,3 +82,4 @@ Prefixos de nomeação, ajudam a organizar e entender o que está acontecendo na
 
 - Delete a branch após o Merge: Depois que sua feature/ ou fix/ for unida (merged) com a develop ou main, apague a branch temporária do servidor. Isso mantém o reporisitório limpo.
 
+## ... Fazendo :) ⬇️
