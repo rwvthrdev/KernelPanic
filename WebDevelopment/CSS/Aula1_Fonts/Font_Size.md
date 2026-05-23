@@ -48,6 +48,8 @@ code {
 
 **pt** (Pontos): Unidade física, usada principalmente para impressão. 1pt equivale a 1/72 de uma polegada. Muito raramente usada para telas.
 
+Exemplos:
+
 ```css
 /* Exemplo 1: Tamanho fixo absoluto. */
 
@@ -77,4 +79,12 @@ Dica: Você também pode usar a tag bold em HTML (b) para deixar em negrito.
 
 **Valores comuns**
 
+- Palavras chave: normal (padrão) e bold (negrito).
 
+- Números de 100 a 900: 400 é igual a normal. 700 é igual a bold. 900 é super grosso (black) e 100 super fino (thin).
+
+Exemplos:
+
+```css
+
+``
