@@ -48,4 +48,25 @@ code {
 
 **pt** (Pontos): Unidade física, usada principalmente para impressão. 1pt equivale a 1/72 de uma polegada. Muito raramente usada para telas.
 
+```css
+/* Exemplo 1: Tamanho fixo absoluto. */
 
+h1 {
+    font-size: 32px;
+}
+
+/* Exemplo 2: Tamanho relativo à raiz. Se a base for 16px, isso equivale a 24px (1.5 * 16) */
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Exemplo 3: Tamanho minúsculo, geralmente usado para notas de rodapé impressas. */
+
+footer {
+    font-size: 10pt;
+}
+
+```
+
+## 3. Font Wheight
