@@ -69,4 +69,12 @@ footer {
 
 ```
 
-## 3. Font Wheight
+## 3. Font Wheight (Espessura da Fonte)
+
+*Como funciona*: Definese o texto será normal, negrito, ou algo entre os dois. A fonte escolhida precisa suportar o peso especificado.
+
+Dica: Você também pode usar a tag bold em HTML (b) para deixar em negrito.
+
+**Valores comuns**
+
+
