@@ -86,5 +86,58 @@ Dica: Você também pode usar a tag bold em HTML (b) para deixar em negrito.
 Exemplos:
 
 ```css
+/* Exemplo 1: Negrito clássico */
 
-``
+strong {
+    font-weight: bold;
+}
+
+/* Exemplo 2: Texto super fino usando números. */
+
+.subitulo {
+    font-weight: 300;
+}
+
+/* Exemplo 3: Texto extra grosso */
+
+.destaque-principal {
+    font-weight: 900;
+}
+```
+
+## 4. Text Align (Alinhamento do Texto)
+
+*Como funciona*: Altera como o texto se alinha horizontalmente dentro da caixa do elemento em que ele está. 
+
+**Valores comuns**
+
+- ```left```: Alinha à esquerda;
+
+- ```right```: Alinha á direita;
+
+- ```center```: Centraliza o texto;
+
+- ```justify```: Estica as linhas para que o texto toque nas duas bordas simultâneamente.
+
+```css
+/* Exemplo 1: Centraliza títulos na página. */
+
+h1 {
+    text-align: center;
+}
+
+/* Exemplo 2: Justifica parágrafos longos para ficarem retos como em livros. */
+
+p {
+    text-align: justify;
+}
+
+/* Exemplo 3: Alinha no canto direito da página. */
+
+.data-publicacao {
+    text-align: right;
+}
+
+```
+
+---
