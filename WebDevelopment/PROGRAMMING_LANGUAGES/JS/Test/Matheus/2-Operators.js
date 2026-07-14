@@ -93,10 +93,106 @@ let nota = 85;
 let conceito = nota >= 90 ? 'A' : nota >= 80 ? 'B' : 'C';
 console.log(conceito);
 
+// Operadores de tipo
+
+console.log(typeof 42);
+console.log(typeof 'JavaScript');
+console.log(typeof true);
+console.log(typeof undefined);
+console.log(typeof null);
+console.log(typeof []);
+console.log(typeof function(){});
+
+console.log([] instanceof Array);
+console.log({} instanceof Object);
+
+// Operadores Bitwise
+
+console.log(5 & 1);
+console.log(5 | 1);
+console.log(5 ^ 1);
+console.log(~5);
+console.log(5 << 1);
+console.log(5 >> 1);
+
+// Operador de String
+
+let nome = "João";
+let sobrenome = "Silva";
+
+console.log(nome + ' ' + sobrenome);
+console.log('Idade: ' + 25);
+console.log('5' + 5);
+console.log(5 + '5');
+console.log(5 + 5 + "5");
+
+// Operador de virgula
+
+let h, i, j;
+h = 1, i = 2, j = 3;
+console.log(h, i, j);
+
+for (let n = 0, l = 10; n <= l; n++, j--) {
+    console.log(n, l)
+}
 
 
+// Operador opicional
 
+const usuario = {
+    nome: 'ana',
+    endereco: {
+        cidade: 'são paulo'
+    }
+};
 
+console.log(usuario?.endereco?.cidade);
+console.log(usuario?.contato?.email);
 
+const lista = [];
+console.log(lista?.[0]);
 
+// Operador Nullish Coalescing
 
+let nomer = null;
+let nomeUsuario = nomer ?? "Visitante";
+console.log(nomeUsuario);
+
+let idadex = 0;
+let idadeUsuario = idadex ?? 18;
+console.log(idadeUsuario);
+
+console.log(0 || 10);
+console.log(0 ?? 10);
+
+// Operadores especiais
+
+//delete
+const pessoa = {nome: 'Carlos', idade: 30};
+console.log(pessoa);
+delete pessoa.idade;
+console.log(pessoa);
+
+//in
+console.log('nome' in pessoa);
+console.log('idade' in pessoa);
+
+//void
+console.log(void 0);
+console.log(void (5 + 3));
+
+// Coerção de tipos
+
+//String + Number = String
+console.log('10' + 20);
+console.log(20 + '10');
+
+//Number - String = Number
+console.log('10' - 5);
+console.log('10' * '2');
+console.log('10' / '2');
+console.log('abc' - 5);
+
+//Booleano em números
+console.log(true + 1);
+console.log(false + 1);
