@@ -41,8 +41,8 @@ usuario.idade = 31 //pode modificar propriedades;
 
 
 //camelCase
-let nomeCompletoDoUsuario;
-const dataNascimento;
+let nomeCompletoDoUsuario = undefined;
+const dataNascimento = undefined;
 
 //snake_case
 let nome_completo;
