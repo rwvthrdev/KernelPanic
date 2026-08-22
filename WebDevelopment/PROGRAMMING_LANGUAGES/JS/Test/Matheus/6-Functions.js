@@ -190,3 +190,115 @@ const triplicar = multiplicador(3);
 
 console.log(duplicar(5));
 console.log(triplicar(5));
+
+// * Escopo
+
+// Global
+var global = 'sou global';
+let escopoBloco = 'tambem global';
+
+function teste() {
+    console.log(global);
+};
+
+// Escopo de função
+
+function exemplo() {
+    var interno = 'Só dentro da função';
+    let outro = 'Também dentro';
+
+    console.log(interno);
+};
+
+console.log(interno);
+
+// Escopo de bloco
+
+if (true) {
+    var x = 10;
+    let y = 20;
+    const z = 30;
+}
+
+console.log(x);
+console.log(y);
+console.log(z);
+
+// Callback
+
+function processar(dados, callback) {
+    const resultado = dados * 2;
+    callback(resultado);
+}
+
+processar(5, function(valor) {
+    console.log('Resultado: ' + valor)
+});
+
+// Callback assíncrono
+
+function buscarDados(callback) {
+    setTimeout(() => {
+        const dados = {id : 1, nome : 'João'};
+        callback(dados);
+    }, 1000)
+}
+
+buscarDados((dados) => {
+    console.log('Dados Recebidos: ', dados)
+});
+
+// Callback com arrays
+
+const numeros = [1,2,3,4,5];
+
+//forEach
+numeros.forEach(function(num) {
+    console.log(num * 2);
+});
+
+//filter
+const pares = numeros.filter(function(num) {
+    return num % 2 == 0;
+});
+
+//map
+const dobrados = numeros.map(function(num) {
+    return num * 2;
+});
+
+// Função de Alta Ordem
+
+const users = [
+    {nome : 'Ana', idade : 25},
+    {nome : 'João', idade : 30},
+    {nome : 'Maria', idade : 20}
+];
+
+const maiores = users.filter(user => user.idade >= 25);
+
+const nomes = users.map(user => user.nome);
+
+const somaIdades = users.reduce((total, user) => total + user.idade, 0);
+
+users.forEach(user => console.log(user.nome));
+
+// Criando função de alta ordem
+
+function criarOperacao() {
+    return function(a, b) {
+        switch(operacao) {
+            case 'soma' : return a + b;
+            case 'subtracao' : return a - b;
+            case 'multiplicacao' : return a * b;
+            default : return null;
+        }
+    };
+}
+
+const soma = criarOperacao('soma');
+const multiplicacao = criarOperacao('multiplicacao');
+
+console.log(soma(5, 3));
+console.log(multiplicacao(5, 3));
+
